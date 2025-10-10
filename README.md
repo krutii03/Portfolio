@@ -28,9 +28,41 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Project Setup (Portfolio)
+
+- **Run locally**
+  - `npm install`
+  - `npm run dev`
+  - Open http://localhost:3000
+
+- **Content editing**
+  - Update JSON at `content/site/data.json` (profile, skills, projects, etc.).
+
+- **Resume**
+  - Place your PDF at `public/Kruti_Patel_Resume.pdf` for the Download button.
+
+- **Environment variables** (create `.env.local` in project root):
+  ```env
+  NEXT_PUBLIC_SITE_URL=https://your-domain.vercel.app
+  RESEND_API_KEY=your_resend_api_key           # optional, for contact email
+  CONTACT_INBOX=you@example.com                # optional, defaults to profile email
+  ```
+
+- **Contact form delivery**
+  - Handler: `src/app/api/contact/route.ts`
+  - Uses Zod validation + honeypot. If `RESEND_API_KEY` is set, emails are sent via Resend.
+
+- **SEO & Analytics**
+  - `src/app/sitemap.ts`, `src/app/robots.ts`, JSON‑LD in `src/components/seo/Schema.tsx`
+  - Vercel Analytics enabled in `src/app/layout.tsx`
+
+- **Deploy to Vercel**
+  1. `npm run build`
+  2. `npx vercel` (follow prompts) or push to GitHub and import in Vercel
+  3. Set `NEXT_PUBLIC_SITE_URL` to your assigned domain and redeploy

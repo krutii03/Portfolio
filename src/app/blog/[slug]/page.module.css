@@ -1,0 +1,8 @@
+.wrapper ul,
+.wrapper ol,
+.wrapper li,
+.wrapper blockquote,
+.wrapper pre,
+.wrapper code {
+  text-align: left;
+}

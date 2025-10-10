@@ -1,0 +1,144 @@
+{
+    "profile": {
+      "name": "Kruti Patel",
+      "tagline": "Full-Stack Developer · Software Engineer",
+      "location": "Surat, Gujarat, India",
+      "headline": "I build modern, scalable, and user-focused web applications.",
+      "summary": "Passionate and detail-oriented developer pursuing an Integrated B.Sc./M.Sc. in Information Technology. I design and develop full-stack web solutions with clean architecture, efficient backend systems, and intuitive front-end experiences. Always eager to learn, collaborate, and create meaningful technology.",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/kruti-patel-8b7709215",
+        "github": "https://github.com/krutii03",
+        "resume": "/Kruti_Patel_Resume.pdf",
+        "email": "krutippatel@yahoo.com"
+      }
+    }
+  ,
+  "skills": {
+    "Languages & Frameworks": ["JavaScript", "TypeScript", "Python", "Java", "C/C++", "Kotlin", "React", "Node.js", "ASP.NET MVC", "PHP", "Laravel"],
+    "Cloud & Databases": ["Oracle Cloud (Foundations)", "Supabase (Auth, Storage, Postgres)", "MySQL", "PostgreSQL"],
+    "Data & Analytics": ["Chart.js", "Oracle Analytics Cloud", "jsPDF", "Data Warehousing & Mining (coursework)", "Data Analytics with Python (coursework)"],
+    "Practices": ["Agile/Scrum", "Git/GitHub", "Clean Code", "API Design", "UI/UX basics"],
+    "Soft Skills": ["Communication", "Leadership", "Teamwork", "Presentation"]
+  },
+  "experience": [
+    {
+      "company": "Freshcodes Technology, Surat",
+      "role": "Project Intern",
+      "period": "Jul 2025 – Dec 2025",
+      "highlights": [
+        "WealthNest: wallet management, portfolio tracking, analytics dashboards.",
+        "Backend API integration, cloud deployment, database optimization.",
+        "Agile collaboration and delivery."
+      ],
+      "stack": ["ASP.NET MVC", "MERN", "Supabase Cloud", "PostgreSQL"]
+    },
+    {
+      "company": "Laugh Logic Labs, Surat",
+      "role": "Junior Full Stack Developer",
+      "period": "May 2024 – May 2025",
+      "highlights": [
+        "End-to-end website modules; coordination and delivery.",
+        "Debugging, optimization, and process management."
+      ],
+      "stack": ["React", "Node.js", "PHP", "MySQL"]
+    },
+    {
+      "company": "Laugh Logic Labs, Surat",
+      "role": "Full Stack Developer Intern",
+      "period": "Feb 2024 – May 2024",
+      "highlights": [
+        "Assisted across frontend/backend tasks; improved debugging.",
+        "Gained real-world team experience."
+      ],
+      "stack": ["JavaScript", "PHP", "MySQL"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "WealthNest",
+      "tags": ["FinTech", "Analytics", "Full-Stack"],
+      "summary": "Investment & portfolio management platform with wallet management, portfolio tracking, and analytics dashboards.",
+      "overview": "WealthNest is a comprehensive investment and portfolio management system designed to help users track performance, manage digital wallets, and visualize financial insights in real time.",
+      "contribution": "Leading full‑stack development: secure APIs, modular backend systems, and responsive front‑end dashboards. Integrated cloud data pipelines and interactive charts for seamless financial visualization.",
+      "highlights": [
+        "Modular architecture ensuring scalability and performance.",
+        "Dynamic analytics dashboards with real-time updates.",
+        "Designed user‑centric workflows for both desktop and mobile."
+      ],
+      "tech": ["ASP.NET MVC", "MERN", "Supabase Cloud", "PostgreSQL", "Chart.js"],
+      "links": {"demo": "#", "code": "#"},
+      "status": "In Progress"
+    },
+    {
+      "name": "SplitEx",
+      "tags": ["FinTech", "Web"],
+      "summary": "Smart group expense manager with secure auth, expense verification, UPI‑QR settlements, admin dashboard, and PDF exports.",
+      "overview": "SplitEx is a web‑based group expense management system that simplifies how users split, verify, and settle shared costs. It provides clear summaries, interactive analytics, and PDF‑based reporting for transparent tracking.",
+      "role": "Independently designed and developed end‑to‑end (frontend + backend integration). Supports UPI‑QR settlements, real‑time verification, and admin control.",
+      "highlights": [
+        "Real‑time expense tracking with group management.",
+        "Auto‑generated analytics using Chart.js.",
+        "Exportable summaries and receipts using jsPDF.",
+        "Secure authentication and data validation."
+      ],
+      "tech": ["HTML", "CSS", "JavaScript", "Supabase", "Chart.js", "jsPDF"],
+      "links": {"demo": "#", "code": "#"},
+      "outcome": "Successfully deployed as an academic project with full functionality and professional documentation."
+    },
+    {
+      "name": "UrbanNest",
+      "tags": ["Hackathon", "Mobile-first"],
+      "summary": "Delivery management prototype focused on real‑time tracking and customer coordination; built during a university hackathon.",
+      "overview": "UrbanNest is a mobile‑first prototype designed to streamline order delivery tracking and customer coordination. Developed during a university hackathon with focus on real‑time data, modern UI, and smooth UX.",
+      "role": "Team Lead coordinating a 4‑member group using agile principles. Designed app flow, managed integration between frontend components and REST APIs, and delivered under tight deadlines.",
+      "highlights": [
+        "Leadership and agile sprint coordination.",
+        "Responsive, material‑themed UI.",
+        "Integrated REST APIs for real‑time delivery status updates.",
+        "Presented and demoed to the university panel."
+      ],
+      "tech": ["Flutter", "Dart", "REST APIs"],
+      "links": {"demo": "#", "code": "#"},
+      "outcome": "Recognized during the hackathon for strong UI design and collaboration under time constraints."
+    }
+  ],
+  "education": [
+    {
+      "school": "Department of ICT, Veer Narmad South Gujarat University (VNSGU), Surat",
+      "degree": "Integrated B.Sc. (IT) / M.Sc. (IT) – 5-Year",
+      "cgpa": "7.25 / 10",
+      "period": "2022 – Present",
+      "coursework": ["AI & ML", "Cloud Computing", "Blockchain", "Data Warehousing & Mining", "Data Analytics with Python"]
+    }
+  ],
+  "certifications": [
+    "Oracle Cloud – AI Foundations Associate (2025)",
+    "Oracle Analytics Cloud Professional (2025)",
+    "IIT Bombay Spoken Tutorial: PHP & MySQL, RDBMS PostgreSQL, JavaScript, HTML & CSS, Bootstrap, C, Java, Advanced C++, Python",
+    "TCS iON Career Edge: Communication, Presentation, Group Discussion, Telephone & Email Etiquette",
+    "UNICEF: Programming with and for Adolescents"
+  ],
+  "awards_leadership": [
+    "1st – HTML & CSS Competition (University Techfest)",
+    "Team Lead – Pre-Hackathon 2025 App Development Challenge (VNSGU)",
+    "National-Level Speedball – Represented Gujarat",
+    "NCC Training (Formal)",
+    "Guinness World Record Participant – International Yoga Day 2023"
+  ],
+  "workshops": [
+    "Cyber Security & Privacy Awareness (SVNIT, VNSGU)",
+    "Machine Learning & GenAI in Financial Sector (Barclays VP)",
+    "LLMs for Software Analysis (APPGAMBiT)",
+    "AI Software Development Tools (Inventam)",
+    "Generative AI in Cybersecurity (CAWACH Kendra, Govt. of Gujarat)"
+  ],
+  "personal": {
+    "interests": ["Poetry", "Guitar", "Photography"],
+    "blurb": "Outside of code, I write poetry, play guitar, and shoot photos—creativity shapes how I design, debug, and communicate."
+  },
+  "contact": {
+    "showEmail": true,
+    "showPhone": false,
+    "note": "Prefer email or the contact form; phone is available on the resume."
+  }
+}

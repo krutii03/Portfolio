@@ -1,0 +1,126 @@
+---
+title: "Building SplitEx: Turning Everyday Payments into a Smarter System"
+date: "2025-10-21"
+summary: "How I built SplitEx — a web-based expense manager that rethinks how groups handle shared costs, adds verification, UPI payments, and analytics — and what I learned from it."
+readTime: "6 min read"
+tags: ["Full-Stack", "Cloud", "Supabase", "Project Story"]
+cover: "/images/blog/splitex-cover.jpg"
+---
+
+# Building SplitEx: Turning Everyday Payments into a Smarter System
+
+When we started developing **SplitEx**, my goal wasn’t just to build another expense-sharing app — it was to *fix what existing ones missed*.  
+
+Most of us have used tools like Splitwise to settle group bills or trips, but I noticed real gaps:  
+❌ No way to **verify** who added an expense.  
+❌ No **UPI** integration for instant settlement in India.  
+❌ No clear system of **admin roles** or leadership handover in groups.  
+
+SplitEx became my solution — a smarter, more secure, and locally relevant version of expense management.
+
+---
+
+## 🧩 My Role in SplitEx
+
+I led the **entire development cycle**, from the first wireframe to the deployed web app.  
+This included:  
+
+- Designing the UI with HTML, CSS, and JavaScript for a clean, simple experience.  
+- Connecting the app to **Supabase** for cloud authentication and PostgreSQL storage.  
+- Implementing a **verification workflow** so every expense required at least one member’s approval before settlement.  
+- Integrating **QRServer API** to dynamically generate UPI QR codes for quick payments.  
+- Creating **real-time dashboards** with Chart.js and **PDF exports** using jsPDF.  
+
+But more importantly, I learned how small design choices can completely change **trust and transparency** in a group system.
+
+---
+
+## ⚙️ What Made SplitEx Different
+
+Here’s what set SplitEx apart technically and conceptually:
+
+| Feature | Problem It Solves | Implementation |
+|----------|------------------|----------------|
+| **Expense Verification** | Prevents false or accidental entries | Locked “Settle” button until verification by another user |
+| **UPI QR Integration** | Instant, localized settlements | Dynamic QRServer API calls linked to user UPI IDs |
+| **Auto Admin Transfer** | Prevents orphaned groups | Automatic reassignment when an admin leaves |
+| **PDF Reports** | Record-keeping and reimbursement | jsPDF-generated summaries and analytics exports |
+| **Real-time Cloud Sync** | Ensures group data consistency | Supabase Realtime and PostgreSQL backend |
+
+Each of these was not just a feature — it was a deliberate response to a *real user frustration* I’d personally seen in existing systems.
+
+---
+
+## 🔄 Verification & Settlement Flow
+
+Here’s a simplified version of how SplitEx ensures secure, verified transactions:
+
+import Mermaid from "@/components/Mermaid";
+
+<Mermaid
+  code={`flowchart TD
+A[User adds expense] --> B{Verified by another member?}
+B -- No --> C[Expense locked]
+B -- Yes --> D[Settlement enabled]
+D --> E[Generate UPI QR for payee]
+E --> F[Payment complete]
+F --> G[Update analytics + logs]
+C -->|Await approval| B
+`}
+/>
+
+This flow ensures no payment happens without group consensus — something even major apps often overlook.
+
+## 📊 Lessons Learned
+
+
+Designing for Trust:
+I realized users care less about how pretty an app looks — and more about whether they can trust it. Adding verification gave users confidence that no one could fake expenses.
+Thinking in Systems:
+Supabase taught me the power of backend-as-a-service tools. With Auth, Realtime DB, and cloud security built-in, I could focus on workflow design instead of server maintenance.
+Balancing UI and Logic:
+It was tempting to over-engineer the interface. But the biggest wins came from simplifying — one clean button at a time.
+Debugging Under Pressure:
+From QR code generation bugs to database conflicts, I learned how to isolate problems quickly.
+(Hint: Console logs + clear modular naming = lifesaver.)
+
+
+
+💬 Behind the Scenes
+
+
+Developing SplitEx wasn’t a straight sprint.
+At one point, the QR system kept breaking because UPI strings weren’t escaping properly. Another time, two users verifying at the same moment caused duplicate DB entries.
+
+Instead of seeing them as blockers, I learned to treat every bug as a case study in cause and effect.
+Each fix made the system — and me — better.
+
+
+
+🌟 What’s Next
+
+
+If I ever expand SplitEx beyond the academic phase, I’d love to:
+
+Build mobile apps (Flutter for Android & iOS).
+Add recurring expenses for subscriptions/rent.
+Include smart analytics — monthly budgets, predictions, spending patterns.
+Introduce multi-currency and international groups.
+
+
+The foundation is solid — now it’s about scaling the idea responsibly.
+
+
+
+🚀 Final Thoughts
+
+
+SplitEx reminded me that innovation doesn’t always mean inventing something new — sometimes it means doing existing things better.
+The expense verification and UPI integration turned what could’ve been “just another project” into something real, practical, and proudly mine.
+
+If there’s one thing I learned, it’s this:
+
+Every problem you solve for yourself has the potential to solve it for thousands of others.
+
+— Kruti Patel
+---
